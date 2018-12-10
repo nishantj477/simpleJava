@@ -4,11 +4,13 @@ public class Student {
     private String firstName;
     private String lastName;
     private int age;
+    private long yearOfEnrollment;
 
-    public Student(String fname, String lname, int age) {
+    public Student(String fname, String lname, int age, long year) {
         this.firstName = fname;
         this.lastName = lname;
         this.age = age;
+        this.yearOfEnrollment = year;
 
     }
 
@@ -26,5 +28,9 @@ public class Student {
 
    public String getFullName() {
         return firstName + " " + lastName;
+   }
+
+   public long getYearOfEnrollment() {
+        return yearOfEnrollment;
    }
 }
