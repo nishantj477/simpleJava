@@ -4,13 +4,11 @@ public class Student {
     private String firstName;
     private String lastName;
     private int age;
-    private String studentId;
 
-    public Student(String fname, String lname, int age, String sid) {
+    public Student(String fname, String lname, int age) {
         this.firstName = fname;
         this.lastName = lname;
         this.age = age;
-        this.studentId = sid;
 
     }
 
@@ -26,11 +24,7 @@ public class Student {
         return age;
     }
 
-    public String getStudentId() {
-        return studentId;
-    }
-
-    public String getFullName() {
+   public String getFullName() {
         return firstName + " " + lastName;
    }
 }
